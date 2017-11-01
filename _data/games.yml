@@ -1,7 +1,6 @@
-- title: Games
-  games:
-  - game: simblocity
-    name: "simblocity: rapid fire match 3"
-    apple_id: "651643960"
-    large_icon: "/img/games/simblocity/icon-large.jpg"
+- title: simblocity
+  name: "simblocity: rapid fire match 3"
+  apple_id: "651643960"
+  large_icon: "/img/games/simblocity/icon-large.jpg"
+  summary: "Awesome fun - a colourful match 3 game that's action packed and glorious!"
 

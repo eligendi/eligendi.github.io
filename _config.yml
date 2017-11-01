@@ -2,11 +2,10 @@
 title: eligendi
 email: feedback@eligendi.com
 description: >
-  Jekyll Template for Project Websites
-  providing documentation and blog post pages.
+  eligendi games home
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: https://aksakalli.github.io/jekyll-doc-theme # the base hostname & protocol for your site
+url: https://www.eligendi.com # the base hostname & protocol for your site
 git_address: https://github.com/aksakalli/jekyll-doc-theme
 git_edit_address: https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages
 
@@ -45,6 +44,12 @@ defaults:
     sectionid: games
     seo:
       type: "WebPage"
+- scope:
+    path: _privacy
+    type: privacy
+  values:
+    layout: page
+    sectionid: privacy
 
 collections:
   contact-us:
@@ -53,6 +58,6 @@ collections:
   games:
     permalink: /:collection/:path/
     output: true  
-  posts:
-    permalink: /blog/:year/:month/:day/:title/
-    output: true
+  privacy:
+    permalink: /:collection/:path/
+    output: true  

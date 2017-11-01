@@ -16,17 +16,6 @@
                 <li {% if page.sectionid=='games' %} class="active" {% endif %}><a href="{{ "/games/" | prepend: site.baseurl }}">Games</a></li>
                 <li {% if page.sectionid=='contact-us' %} class="active" {% endif %}><a href="{{ "/contact-us/" | prepend: site.baseurl }}">Contact Us</a></li>
             </ul>
-            <div class="navbar-right">
-                <form class="navbar-form navbar-left">
-                    <div class="form-group has-feedback">
-                        <input id="search-box" type="text" class="form-control" placeholder="Search...">
-                        <i class="fa fa-search form-control-feedback"></i>
-                    </div>
-                </form>
-                <ul class="nav navbar-nav">
-                    <li><a href="{{ site.git_address }}"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
         </div>
     </div>
 </nav>
