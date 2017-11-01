@@ -10,10 +10,17 @@
     <meta name="description" content="eligendi games home
 ">
 
-
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+    <link rel="stylesheet" href="/css/owl.theme.css">
+
+    <link rel="stylesheet" href="/css/nivo-lightbox/nivo-lightbox.css">
+    <link rel="stylesheet" href="/css/animate.css">
+
+    <script src="/js/modernizr.custom.js "></script>
+    
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -94,6 +101,27 @@
 <script src="/js/typeahead.bundle.min.js "></script>
 
 <script src="/js/main.js "></script>
+
+<script src="/js/wow.min.js "></script>
+
+<script src="/js/owl-carousel.js "></script>
+<script src="/js/nivo-lightbox.min.js "></script>
+<script src="/js/smoothscroll.js "></script>
+<script src="/js/classie.js "></script>
+
+<script>
+  new WOW().init();
+</script>
+<script>
+  $(document).ready(function(){
+      $(".hideit").click(function(){
+          $(".overlay").hide();
+      });
+      $("#trigger-overlay").click(function(){
+          $(".overlay").show();
+      });
+  });
+</script>
 
 </body>
 

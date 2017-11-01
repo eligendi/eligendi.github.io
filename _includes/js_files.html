@@ -6,3 +6,24 @@
 <script src="{{ "/js/typeahead.bundle.min.js" | prepend: site.baseurl }} "></script>
 
 <script src="{{ "/js/main.js" | prepend: site.baseurl }} "></script>
+
+<script src="{{ "/js/wow.min.js" | prepend: site.baseurl }} "></script>
+
+<script src="{{ "/js/owl-carousel.js" | prepend: site.baseurl }} "></script>
+<script src="{{ "/js/nivo-lightbox.min.js" | prepend: site.baseurl }} "></script>
+<script src="{{ "/js/smoothscroll.js" | prepend: site.baseurl }} "></script>
+<script src="{{ "/js/classie.js" | prepend: site.baseurl }} "></script>
+
+<script>
+  new WOW().init();
+</script>
+<script>
+  $(document).ready(function(){
+      $(".hideit").click(function(){
+          $(".overlay").hide();
+      });
+      $("#trigger-overlay").click(function(){
+          $(".overlay").show();
+      });
+  });
+</script>

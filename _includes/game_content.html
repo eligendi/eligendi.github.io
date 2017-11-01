@@ -1,0 +1,56 @@
+{% assign game = site.data.games | where:"title", "simblocity" | first %}
+
+<img src="{{ game.large_icon }}">
+
+<p><a class="app-store-button" href="https://itunes.apple.com/us/app/{{ game.title }}/id{{ game.apple_id }}?mt=8&uo=6&at=&ct=" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.png) no-repeat;width:165px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg);}"></a></p>
+
+
+<h3>{{ game.name }}</h3>
+
+<section id="gallery" class="wrapper">
+    <div class="container">
+        <h2 class="animation-box wow bounceIn animated">screenshots</h2>
+        <div class="virticle-line"></div>
+        <div class="circle"></div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="screenshots" class="owl-carousel owl-theme">
+                  <a href="/img/games/{{game.title}}/screens/iphone/1.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
+                    <img src="/img/games/{{game.title}}/screens/iphone/1.png" class="img_res wow animated zoomIn" alt="">
+                  </a>
+                  <a href="/img/games/{{game.title}}/screens/iphone/2.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
+                    <img src="/img/games/{{game.title}}/screens/iphone/2.png" class="img_res wow animated zoomIn" alt="">
+                  </a>
+                  <a href="/img/games/{{game.title}}/screens/iphone/3.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
+                    <img src="/img/games/{{game.title}}/screens/iphone/3.png" class="img_res wow animated zoomIn" alt="">
+                  </a>
+                  <a href="/img/games/{{game.title}}/screens/iphone/4.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
+                    <img src="/img/games/{{game.title}}/screens/iphone/4.png" class="img_res wow animated zoomIn" alt="">
+                  </a>
+                  <a href="/img/games/{{game.title}}/screens/iphone/1.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
+                    <img src="/img/games/{{game.title}}/screens/iphone/1.png" class="img_res wow animated zoomIn" alt="">
+                  </a>
+                  <a href="/img/games/{{game.title}}/screens/iphone/2.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
+                    <img src="/img/games/{{game.title}}/screens/iphone/2.png" class="img_res wow animated zoomIn" alt="">
+                  </a>
+                  <a href="/img/games/{{game.title}}/screens/iphone/3.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
+                    <img src="/img/games/{{game.title}}/screens/iphone/3.png" class="img_res wow animated zoomIn" alt="">
+                  </a>
+                  <a href="/img/games/{{game.title}}/screens/iphone/4.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
+                    <img src="/img/games/{{game.title}}/screens/iphone/4.png" class="img_res wow animated zoomIn" alt="">
+                  </a>
+                  <a href="/img/games/{{game.title}}/screens/iphone/1.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
+                    <img src="/img/games/{{game.title}}/screens/iphone/1.png" class="img_res wow animated zoomIn" alt="">
+                  </a>
+                  <a href="/img/games/{{game.title}}/screens/iphone/2.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
+                    <img src="/img/games/{{game.title}}/screens/iphone/2.png" class="img_res wow animated zoomIn" alt="">
+                  </a>
+                </div>
+                 <div class="customNavigation row">
+                  <a class="btn prev gallery-nav wow animated bounceInLeft"><i class="fa fa-chevron-left"></i></a> 
+                  <a class="btn next gallery-nav wow animated bounceInRight"><i class="fa fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
