@@ -48,7 +48,7 @@ defaults:
     path: _privacy
     type: privacy
   values:
-    layout: page
+    layout: privacy
     sectionid: privacy
 
 collections:
