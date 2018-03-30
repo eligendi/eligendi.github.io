@@ -61,3 +61,5 @@ collections:
   privacy:
     permalink: /:collection/:path/
     output: true  
+
+theme: jekyll-theme-leap-day
