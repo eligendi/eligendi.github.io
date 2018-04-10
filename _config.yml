@@ -11,7 +11,7 @@ git_edit_address: https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages
 
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap
-bootwatch: flatly
+bootwatch: slate
 
 # Build settings
 markdown: kramdown
@@ -61,5 +61,3 @@ collections:
   privacy:
     permalink: /:collection/:path/
     output: true  
-
-theme: jekyll-theme-leap-day

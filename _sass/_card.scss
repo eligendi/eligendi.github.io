@@ -188,18 +188,3 @@
     @include border-bottom-radius($panel-border-radius);
   }
 
-.card {
-  background: url("/img/cards/hex-pattern-fade-blue.png");  
-}
-
-  .card::after {
-    content: "";
-    background: url("/img/cards/hex-pattern-fade-blue.png");
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-  }
