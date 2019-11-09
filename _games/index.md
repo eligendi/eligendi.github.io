@@ -12,7 +12,7 @@ permalink: /games/
       <p class="card-text">{{game.summary}}</p>
     </div>
     <div class="card-footer card-info">
-      <a href="\games\{{game.title}}">click for more</a>
+      <a href="\games\{{game.title}}">more info</a>
     </div>
   </div>
 {% endfor %}

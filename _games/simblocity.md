@@ -1,5 +1,5 @@
 ---
-title: simblocity
+title: Simblocity
 permalink: /games/simblocity/
 ---
 

@@ -1,17 +1,23 @@
 {% assign game = site.data.games | where:"title", "simblocity" | first %}
 
-<img src="{{ game.large_icon }}">
-
-<p><a class="app-store-button" href="https://itunes.apple.com/us/app/{{ game.title }}/id{{ game.apple_id }}?mt=8&uo=6&at=&ct=" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.png) no-repeat;width:165px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg);}"></a></p>
-
-
-<h3>{{ game.name }}</h3>
+<div class="row">
+  <div class="col-md-2">
+  <a href="https://itunes.apple.com/us/app/{{ game.title }}/id{{ game.apple_id }}?mt=8&uo=6&at=&ct=" target="itunes_store">
+    <img src="{{ game.large_icon }}" style="height:80px;" class="img-thumbnail"/>
+  </a>
+</div>
+<div class="col-md-10">
+<h3>{{ game.name }}</h3><h4>{{ game.summary }}</h4></div></div>
 
 <p>{{game.description}}</p>
 
+<div class="row">
+    <a class="app-store-button" href="https://itunes.apple.com/us/app/{{ game.title }}/id{{ game.apple_id }}?mt=8&uo=6&at=&ct=" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.png) no-repeat;width:165px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg);}"></a>
+  </div>
+  
 <section id="gallery" class="wrapper">
     <div class="container">
-        <h3 class="animation-box wow bounceIn animated">iphone gallery</h3>
+        <h3 class="animation-box wow bounceIn animated">Gallery</h3>
         <div class="virticle-line"></div>
         <div class="circle"></div>
         <div class="row">

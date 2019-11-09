@@ -1,20 +1,16 @@
 - title: simblocity
-  name: "simblocity: cascade masters"
+  name: "Simblocity"
   apple_id: "651643960"
   large_icon: "/img/games/simblocity/icon-large.png"
-  summary: "Awesome fun - a colorful action packed match 3 game!"
-  description: "You've got 63 seconds to match the colored blocks - the smarter you match, the better you score!
-<hr>
-* Fast, fun and addictive match 3 game!
-<br>
-* A test for your reactions and multitasking skills!
-<br>
-* Match quick and build up your multipliers!
-<br>
-* Boost your score with cascades and combos!
-<br>
-* Create and combine special blocks and score huge bonuses!
-<br>
-* Compete with your friends on our Gamecenter and Facebook leaderboards
-<hr>
-Can you get over a million? Download simblocity and take up the challenge!"
+  summary: "Fast frantic match 3 action!"
+  description: "<h5>You've got 62 seconds to match the colored blocks - the smarter you match, the better you score!</h5>
+<ul>
+<li>Fast, fun and addictive match 3 game!</li>
+<li>A test for your reactions and multitasking skills!</li>
+<li>Match quick and build up your multipliers!</li>
+<li>Boost your score with cascades and combos!</li>
+<li>Create and combine special blocks and score huge bonuses!</li>
+<li>Watch out for the gel blocks and stone blocks! They really make the difference!</li>
+</ul>
+<div class='well'>How high can you score? A million? A billion? Get Simblocity and take up the challenge!!</div>
+<hr>"
