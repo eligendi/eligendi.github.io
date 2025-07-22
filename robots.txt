@@ -2,8 +2,8 @@
 layout: null
 sitemap: false
 ---
-User-agent: *
-Sitemap: {{ "sitemap.xml" | absolute_url }}
-
 User-agent: Google-adstxt
 Disallow: 
+
+User-agent: *
+Sitemap: {{ "sitemap.xml" | absolute_url }}
