@@ -5,5 +5,3 @@ sitemap: false
 User-agent: Google-adstxt
 Disallow: 
 
-User-agent: *
-Sitemap: {{ "sitemap.xml" | absolute_url }}
