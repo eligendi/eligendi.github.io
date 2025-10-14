@@ -22,41 +22,32 @@
         <div class="circle"></div>
         <div class="row">
             <div class="col-xs-12">
-                <div id="screenshots" class="owl-carousel owl-theme">
-                  <a href="/img/games/{{game.title}}/screens/iphone/1.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
-                    <img src="/img/games/{{game.title}}/screens/iphone/1.png" class="img_res wow animated zoomIn" alt="">
-                  </a>
-                  <a href="/img/games/{{game.title}}/screens/iphone/2.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
-                    <img src="/img/games/{{game.title}}/screens/iphone/2.png" class="img_res wow animated zoomIn" alt="">
-                  </a>
-                  <a href="/img/games/{{game.title}}/screens/iphone/3.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
-                    <img src="/img/games/{{game.title}}/screens/iphone/3.png" class="img_res wow animated zoomIn" alt="">
-                  </a>
-                  <a href="/img/games/{{game.title}}/screens/iphone/4.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
-                    <img src="/img/games/{{game.title}}/screens/iphone/4.png" class="img_res wow animated zoomIn" alt="">
-                  </a>
-                  <a href="/img/games/{{game.title}}/screens/iphone/1.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
-                    <img src="/img/games/{{game.title}}/screens/iphone/1.png" class="img_res wow animated zoomIn" alt="">
-                  </a>
-                  <a href="/img/games/{{game.title}}/screens/iphone/2.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
-                    <img src="/img/games/{{game.title}}/screens/iphone/2.png" class="img_res wow animated zoomIn" alt="">
-                  </a>
-                  <a href="/img/games/{{game.title}}/screens/iphone/3.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
-                    <img src="/img/games/{{game.title}}/screens/iphone/3.png" class="img_res wow animated zoomIn" alt="">
-                  </a>
-                  <a href="/img/games/{{game.title}}/screens/iphone/4.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
-                    <img src="/img/games/{{game.title}}/screens/iphone/4.png" class="img_res wow animated zoomIn" alt="">
-                  </a>
-                  <a href="/img/games/{{game.title}}/screens/iphone/1.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
-                    <img src="/img/games/{{game.title}}/screens/iphone/1.png" class="img_res wow animated zoomIn" alt="">
-                  </a>
-                  <a href="/img/games/{{game.title}}/screens/iphone/2.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
-                    <img src="/img/games/{{game.title}}/screens/iphone/2.png" class="img_res wow animated zoomIn" alt="">
-                  </a>
+                <!-- Swiper -->
+                <div class="swiper screenshots-swiper">
+                    <div class="swiper-wrapper">
+                        {% for i in (1..5) %}
+                        <div class="swiper-slide">
+                            <a href="/img/games/{{game.title}}/screens/iphone/{{i}}.png" data-lightbox-gallery="screenshots" class="wow flipInY animated">
+                                <img src="/img/games/{{game.title}}/screens/iphone/{{i}}.png" class="img_res wow animated zoomIn" alt="Screenshot {{i}}" loading="lazy">
+                            </a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-                 <div class="customNavigation row">
-                  <a class="btn prev gallery-nav wow animated bounceInLeft"><i class="fa fa-chevron-left"></i></a> 
-                  <a class="btn next gallery-nav wow animated bounceInRight"><i class="fa fa-chevron-right"></i></a>
+                <!-- Thumbnail Gallery -->
+                <div class="swiper screenshots-thumbs">
+                    <div class="swiper-wrapper">
+                        {% for i in (1..5) %}
+                        <div class="swiper-slide">
+                            <img src="/img/games/{{game.title}}/screens/iphone/{{i}}.png" alt="Screenshot {{i}} thumbnail" loading="lazy">
+                        </div>
+                        {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>

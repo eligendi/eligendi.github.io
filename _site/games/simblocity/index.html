@@ -23,8 +23,8 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="/css/owl.carousel.css">
-    <link rel="stylesheet" href="/css/owl.theme.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="/css/nivo-lightbox/nivo-lightbox.css">
     <link rel="stylesheet" href="/css/animate.css">
@@ -50,11 +50,11 @@
 <meta property="og:url" content="http://localhost:4000/games/simblocity/" />
 <meta property="og:site_name" content="eligendi games" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2025-07-26T17:38:42+01:00" />
+<meta property="article:published_time" content="2025-08-10T20:37:42+01:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Simblocity" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","dateModified":"2025-07-26T17:38:42+01:00","datePublished":"2025-07-26T17:38:42+01:00","description":"SimblocityFast frantic match 3 action! You&#39;ve got 62 seconds to match the colored blocks - the smarter you match, the better you score! Fast, fun and addictive match 3 game! A test for your reactions and multitasking skills! Match quick and build up your multipliers! Boost your score with cascades and combos! Create and combine special blocks and score huge bonuses! Watch out for the gel blocks and stone blocks! They really make the difference! How high can you score? A million? A billion? Get Simblocity and take up the challenge!! Gallery","headline":"Simblocity","url":"http://localhost:4000/games/simblocity/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","dateModified":"2025-08-10T20:37:42+01:00","datePublished":"2025-08-10T20:37:42+01:00","description":"SimblocityFast frantic match 3 action! You&#39;ve got 62 seconds to match the colored blocks - the smarter you match, the better you score! Fast, fun and addictive match 3 game! A test for your reactions and multitasking skills! Match quick and build up your multipliers! Boost your score with cascades and combos! Create and combine special blocks and score huge bonuses! Watch out for the gel blocks and stone blocks! They really make the difference! How high can you score? A million? A billion? Get Simblocity and take up the challenge!! Gallery","headline":"Simblocity","url":"http://localhost:4000/games/simblocity/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -114,41 +114,72 @@
         <div class="circle"></div>
         <div class="row">
             <div class="col-xs-12">
-                <div id="screenshots" class="owl-carousel owl-theme">
-                  <a href="/img/games/simblocity/screens/iphone/1.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
-                    <img src="/img/games/simblocity/screens/iphone/1.png" class="img_res wow animated zoomIn" alt="" />
-                  </a>
-                  <a href="/img/games/simblocity/screens/iphone/2.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
-                    <img src="/img/games/simblocity/screens/iphone/2.png" class="img_res wow animated zoomIn" alt="" />
-                  </a>
-                  <a href="/img/games/simblocity/screens/iphone/3.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
-                    <img src="/img/games/simblocity/screens/iphone/3.png" class="img_res wow animated zoomIn" alt="" />
-                  </a>
-                  <a href="/img/games/simblocity/screens/iphone/4.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
-                    <img src="/img/games/simblocity/screens/iphone/4.png" class="img_res wow animated zoomIn" alt="" />
-                  </a>
-                  <a href="/img/games/simblocity/screens/iphone/1.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
-                    <img src="/img/games/simblocity/screens/iphone/1.png" class="img_res wow animated zoomIn" alt="" />
-                  </a>
-                  <a href="/img/games/simblocity/screens/iphone/2.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
-                    <img src="/img/games/simblocity/screens/iphone/2.png" class="img_res wow animated zoomIn" alt="" />
-                  </a>
-                  <a href="/img/games/simblocity/screens/iphone/3.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
-                    <img src="/img/games/simblocity/screens/iphone/3.png" class="img_res wow animated zoomIn" alt="" />
-                  </a>
-                  <a href="/img/games/simblocity/screens/iphone/4.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
-                    <img src="/img/games/simblocity/screens/iphone/4.png" class="img_res wow animated zoomIn" alt="" />
-                  </a>
-                  <a href="/img/games/simblocity/screens/iphone/1.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
-                    <img src="/img/games/simblocity/screens/iphone/1.png" class="img_res wow animated zoomIn" alt="" />
-                  </a>
-                  <a href="/img/games/simblocity/screens/iphone/2.png" class="item wow flipInY animated animated" data-lightbox-gallery="screenshots">
-                    <img src="/img/games/simblocity/screens/iphone/2.png" class="img_res wow animated zoomIn" alt="" />
-                  </a>
+                <!-- Swiper -->
+                <div class="swiper screenshots-swiper">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide">
+                            <a href="/img/games/simblocity/screens/iphone/1.png" data-lightbox-gallery="screenshots" class="wow flipInY animated">
+                                <img src="/img/games/simblocity/screens/iphone/1.png" class="img_res wow animated zoomIn" alt="Screenshot 1" loading="lazy" />
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <a href="/img/games/simblocity/screens/iphone/2.png" data-lightbox-gallery="screenshots" class="wow flipInY animated">
+                                <img src="/img/games/simblocity/screens/iphone/2.png" class="img_res wow animated zoomIn" alt="Screenshot 2" loading="lazy" />
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <a href="/img/games/simblocity/screens/iphone/3.png" data-lightbox-gallery="screenshots" class="wow flipInY animated">
+                                <img src="/img/games/simblocity/screens/iphone/3.png" class="img_res wow animated zoomIn" alt="Screenshot 3" loading="lazy" />
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <a href="/img/games/simblocity/screens/iphone/4.png" data-lightbox-gallery="screenshots" class="wow flipInY animated">
+                                <img src="/img/games/simblocity/screens/iphone/4.png" class="img_res wow animated zoomIn" alt="Screenshot 4" loading="lazy" />
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <a href="/img/games/simblocity/screens/iphone/5.png" data-lightbox-gallery="screenshots" class="wow flipInY animated">
+                                <img src="/img/games/simblocity/screens/iphone/5.png" class="img_res wow animated zoomIn" alt="Screenshot 5" loading="lazy" />
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-                 <div class="customNavigation row">
-                  <a class="btn prev gallery-nav wow animated bounceInLeft"><i class="fa fa-chevron-left"></i></a> 
-                  <a class="btn next gallery-nav wow animated bounceInRight"><i class="fa fa-chevron-right"></i></a>
+                <!-- Thumbnail Gallery -->
+                <div class="swiper screenshots-thumbs">
+                    <div class="swiper-wrapper">
+                        
+                        <div class="swiper-slide">
+                            <img src="/img/games/simblocity/screens/iphone/1.png" alt="Screenshot 1 thumbnail" loading="lazy" />
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <img src="/img/games/simblocity/screens/iphone/2.png" alt="Screenshot 2 thumbnail" loading="lazy" />
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <img src="/img/games/simblocity/screens/iphone/3.png" alt="Screenshot 3 thumbnail" loading="lazy" />
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <img src="/img/games/simblocity/screens/iphone/4.png" alt="Screenshot 4 thumbnail" loading="lazy" />
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <img src="/img/games/simblocity/screens/iphone/5.png" alt="Screenshot 5 thumbnail" loading="lazy" />
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -177,7 +208,8 @@
 <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="/js/wow.min.js "></script>
 
-<script src="/js/owl-carousel.js "></script>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
 <script src="/js/nivo-lightbox.min.js "></script>
 <script src="/js/smoothscroll.js "></script>
 <script src="/js/bootstrap.min.js "></script>
@@ -190,6 +222,53 @@
 
 <script>
   new WOW().init();
+</script>
+
+<!-- Initialize Swiper -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // Initialize thumbnails swiper first
+  var thumbsSwiper = new Swiper('.screenshots-thumbs', {
+    spaceBetween: 10,
+    slidesPerView: 'auto',
+    freeMode: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+      480: {
+        slidesPerView: 4,
+      },
+      768: {
+        slidesPerView: 5,
+      }
+    }
+  });
+
+  // Initialize main swiper with centered auto layout
+  var mainSwiper = new Swiper('.screenshots-swiper', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    thumbs: {
+      swiper: thumbsSwiper,
+    },
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    effect: 'slide',
+    speed: 600,
+    grabCursor: true,
+  });
+});
 </script>
 <script>
   $(document).ready(function(){

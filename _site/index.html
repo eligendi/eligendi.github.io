@@ -24,8 +24,8 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="/css/owl.carousel.css">
-    <link rel="stylesheet" href="/css/owl.theme.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="/css/nivo-lightbox/nivo-lightbox.css">
     <link rel="stylesheet" href="/css/animate.css">
@@ -119,7 +119,8 @@
 <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="/js/wow.min.js "></script>
 
-<script src="/js/owl-carousel.js "></script>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script>
 <script src="/js/nivo-lightbox.min.js "></script>
 <script src="/js/smoothscroll.js "></script>
 <script src="/js/bootstrap.min.js "></script>
@@ -132,6 +133,53 @@
 
 <script>
   new WOW().init();
+</script>
+
+<!-- Initialize Swiper -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // Initialize thumbnails swiper first
+  var thumbsSwiper = new Swiper('.screenshots-thumbs', {
+    spaceBetween: 10,
+    slidesPerView: 'auto',
+    freeMode: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+      480: {
+        slidesPerView: 4,
+      },
+      768: {
+        slidesPerView: 5,
+      }
+    }
+  });
+
+  // Initialize main swiper with centered auto layout
+  var mainSwiper = new Swiper('.screenshots-swiper', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    thumbs: {
+      swiper: thumbsSwiper,
+    },
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    effect: 'slide',
+    speed: 600,
+    grabCursor: true,
+  });
+});
 </script>
 <script>
   $(document).ready(function(){
